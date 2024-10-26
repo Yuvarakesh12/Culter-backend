@@ -1,0 +1,30 @@
+GET http://localhost:3000/products
+
+
+###################
+
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "New Product",
+  "price": 25.0,
+  "quality": 4
+}
+
+#############
+
+PUT http://localhost:3000/products/4
+Content-Type: application/json
+
+{
+  "name": "my product",
+  "price": 25.0,
+  "quality": 4
+}
+
+##################
+
+
+DELETE http://localhost:3000/products/4
